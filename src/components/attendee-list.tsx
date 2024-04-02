@@ -40,12 +40,10 @@ export function AttendeeList() {
               <th className="py3 px-4 text-sm font-semibold text-left">
                 Data de inscrição
               </th>
-              <th
-                style={{ width: 64 }}
-                className="py3 px-4 text-sm font-semibold text-left"
-              >
+              <th className="py3 px-4 text-sm font-semibold text-left">
                 Data do check-in
               </th>
+              <th style={{ width: 64 }}></th>
             </tr>
           </thead>
           <tbody>
