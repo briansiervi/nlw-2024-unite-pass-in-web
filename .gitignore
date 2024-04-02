@@ -23,3 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 package-lock.json
+# React Component Preview
+previewConfig.json
