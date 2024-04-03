@@ -2,17 +2,18 @@ import { ComponentProps } from "react";
 
 interface NavLinkProps extends ComponentProps<"a"> {
   children: string;
-  selected: boolean;
+  selected?: boolean;
 }
 
-export function NavLink(props: NavLinkProps) {
-  const classNameSelected: string = "font-medium text-sm text-zinc-300";
-  const classNameUnSelected: string = "font-medium text-sm text-zinc-500";
-
+export function NavLink({ selected, ...props }: NavLinkProps) {
   return (
     <a
       {...props}
-      className={props.selected ? classNameSelected : classNameUnSelected}
+      className={
+        selected
+          ? "font-medium text-sm text-zinc-300"
+          : "font-medium text-sm text-zinc-500"
+      }
     >
       {props.children}
     </a>
